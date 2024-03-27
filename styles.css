@@ -74,13 +74,10 @@ body {
     background: #000000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     position: fixed;
-    /* Change from sticky to fixed */
     top: 0;
     left: 0;
     width: 100%;
-    /* Ensure the navbar takes the full width of the viewport */
     z-index: 999;
-    /* Ensure the navbar is above other elements */
 }
 
 
@@ -308,4 +305,119 @@ body {
 #banner button:hover {
     background-color: #10ecde;
     color: #fff;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner {
+    display: flex;
+}
+
+#sm-banner .banner-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Align content to the bottom */
+    align-items: flex-start;
+    background-image: url(images/banner/b4.png);
+    min-width: 0;
+    /* Allow flex items to shrink below their content width */
+    height: 29vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    position: relative;
+    /* Required for absolute positioning */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    margin: 0 5px;
+    /* Add some margin between banner boxes */
+}
+
+#sm-banner .banner-box2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Align content to the bottom */
+    align-items: flex-start;
+    background-image: url(images/banner/b3.jpg);
+    min-width: 0;
+    /* Allow flex items to shrink below their content width */
+    height: 29vh;
+    background-size: cover;
+    background-position: -800px -550px;
+    padding: 30px;
+    position: relative;
+    /* Required for absolute positioning */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+    margin: 0 5px;
+    /* Add some margin between banner boxes */
+}
+
+#sm-banner .banner-box2 h4,
+#sm-banner .banner-box2 h2,
+#sm-banner .banner-box2 span,
+#sm-banner .banner-box2 button {
+    position: absolute;
+    left: 30px;
+    /* Adjust as needed */
+    margin: 0;
+    color: #000000
+}
+
+#sm-banner .banner-box h4,
+#sm-banner .banner-box h2,
+#sm-banner .banner-box span,
+#sm-banner .banner-box button {
+    position: absolute;
+    left: 30px;
+    /* Adjust as needed */
+    margin: 0;
+}
+
+#sm-banner h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    bottom: 220px;
+}
+
+#sm-banner h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    bottom: 190px;
+}
+
+#sm-banner span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    bottom: 160px;
+}
+
+#sm-banner button {
+    bottom: 125px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#sm-banner .banner-box:hover button {
+    background-color: #10ecde;
+    border: 1px solid #10ecde;
 }
